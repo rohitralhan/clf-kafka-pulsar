@@ -13,10 +13,10 @@
 <div>
 <div>
 <h2 id="_background">Background</h2>
-<p>Red Hat OpenShift&nbsp;is an open-source container application platform based on the Kubernetes container orchestrator for enterprise application development and deployment. This article will be showcase how to forward logs from&nbsp;<a href="https://www.openshift.com/products/container-platform" target="_blank" rel="noopener noreferrer">Openshift Container Platform</a>&nbsp; to Apache Pulsar via Kafka.&nbsp;</p>
+<p>Red Hat OpenShift&nbsp;is an open-source container application platform based on the Kubernetes container orchestrator for enterprise application development and deployment. This article will be showing procedure on how to forward logs from&nbsp;<a href="https://www.openshift.com/products/container-platform" target="_blank" rel="noopener noreferrer">Openshift Container Platform</a>&nbsp; to Apache Pulsar via Kafka.&nbsp;</p>
 </div>
 <div>
-<h2  id="_prerequisites">Prerequisites</h2>
+<h2 id="_prerequisites">Prerequisites</h2>
 <div>
 <div>
 <p><strong>Tools</strong></p>
@@ -94,8 +94,8 @@
 </ul>
 </div>
 <div>
-<p><img src="images/elasticsearch.png" alt="ElasticsearchOperator" /></p>
-<p><img src="images/elasticsearchinstall.png" alt="ElasticsearchOperatorInstall" /></p>
+<p><img src="images/elasticoperator.png" alt="ElasticsearchOperator" /></p>
+<p><img src="images/elasticoperatorInstall.png" alt="ElasticsearchOperatorInstall" /></p>
 </div>
 <ul>
 <li>
@@ -104,8 +104,8 @@
 </ul>
 </div>
 <div>
-<p><img src="images/clusterlogging.png" alt="ClusterLogging" /></p>
-<p><img src="images/clusterlogginginstall.png" alt="ClusterLoggingInstall" /></p>
+<p><img src="images/clusterloggingoperator.png" alt="ClusterLogging" /></p>
+<p><img src="images/clusterloggingoperatorInstall.png" alt="ClusterLoggingInstall" /></p>
 </div>
 <div>
 <ul>
@@ -134,6 +134,7 @@
 <li>
 <p>Under the /pulsar folder run the python pulsar listener application to see the logs coming from OpenShift into pulsar via kafka</p>
 </li>
+<p><img src="images/openshiftlogs.png" alt="Logs" /></p>
 <li>Below is the pulsar client code to display the message on the terminal</li>
 </ul>
 </div>
