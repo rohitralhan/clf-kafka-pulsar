@@ -110,7 +110,7 @@
 <div>
 <ul>
 <li>
-<p>Download the scripts to a folder</p>
+<p>Download the scripts to a folder (all teh yml files)</p>
 </li>
 <li>
 <p>Go to command line and login to your OpenShift cluster</p>
