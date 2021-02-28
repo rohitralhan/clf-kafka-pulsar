@@ -1,0 +1,39 @@
+apiVersion: logging.openshift.io/v1
+kind: ClusterLogForwarder
+metadata:
+  name: instance 
+  namespace: openshift-logging 
+spec:
+  outputs:
+   - name: app-logs 
+     type: kafka 
+     url: tcp://pulsar-kafka.zkp-integ.svc.cluster.local:9092/my-topic
+   - name: infra-logs
+     type: kafka
+     url: tcp://pulsar-kafka.zkp-integ.svc.cluster.local:9092/my-topic
+   - name: audit-logs
+     type: kafka
+     url: tcp://pulsar-kafka.zkp-integ.svc.cluster.local:9092/my-topic
+  pipelines:
+   - name: app-topic 
+     inputRefs: 
+     - application
+     outputRefs: 
+     - app-logs
+     labels:
+       logType: application 
+   - name: infra-topic 
+     inputRefs:
+     - infrastructure
+     outputRefs:
+     - infra-logs
+     labels:
+       logType: infra
+   - name: audit-topic
+     inputRefs:
+     - audit
+     outputRefs:
+     - audit-logs
+     - default 
+     labels:
+       logType: audit
