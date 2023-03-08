@@ -13,7 +13,7 @@
 <div>
 <div>
 <h2 id="_background">Background</h2>
-<p>Red Hat OpenShift&nbsp;is an open-source container application platform based on the Kubernetes container orchestrator for enterprise application development and deployment. This article will be showing procedure on how to forward logs from&nbsp;<a href="https://www.openshift.com/products/container-platform" target="_blank" rel="noopener noreferrer">Openshift Container Platform</a>&nbsp; to Apache Pulsar via Kafka.&nbsp;</p>
+<p>Red Hat OpenShift&nbsp;is an open-source container application platform based on the Kubernetes container orchestrator for enterprise application development and deployment. This article will be showcase procedure on how to forward logs from&nbsp;<a href="https://www.openshift.com/products/container-platform" target="_blank" rel="noopener noreferrer">Openshift Container Platform</a>&nbsp; to Apache Pulsar via Kafka.&nbsp;</p>
 </div>
 <div>
 <h2 id="_prerequisites">Prerequisites</h2>
