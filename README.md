@@ -110,13 +110,13 @@
 <div>
 <ul>
 <li>
-<p>Download the scripts to a folder (all teh yml files)</p>
+<p>Download the scripts to a folder (all the yml files)</p>
 </li>
 <li>
 <p>Go to command line and login to your OpenShift cluster</p>
 </li>
 <li>
-<p>Execute the following Commands in sequence from teh folder where you have downloaded the scripts</p>
+<p>Execute the following Commands in sequence from the folder where you have downloaded the scripts</p>
 <ul>
 <li>oc apply -f kafka-pulsar-integration.yml</li>
 <li>oc apply -f ClusterLogging.yml</li>
